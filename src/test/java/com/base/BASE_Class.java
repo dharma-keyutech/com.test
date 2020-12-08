@@ -21,11 +21,11 @@ public class BASE_Class {
 	// System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/drivers/chromedriver.exe");
             	//System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/drivers/chromedriver");
 
-//		       WebDriverManager.chromedriver().setup();
-//			driver = new ChromeDriver();
+		       WebDriverManager.chromedriver().setup();
+			driver = new ChromeDriver();
 
-  		WebDriverManager.firefoxdriver().setup();
-			driver = new FirefoxDriver();
+  		 //WebDriverManager.firefoxdriver().setup();
+			 //driver = new FirefoxDriver();
 			
                  driver.navigate().to(Url);
                  
