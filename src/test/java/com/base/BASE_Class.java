@@ -3,6 +3,8 @@ package com.base;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class BASE_Class {
 
 	public static WebDriver driver;
@@ -15,9 +17,10 @@ public class BASE_Class {
 			// location
 			
 	// System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/drivers/chromedriver.exe");
-            	System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/drivers/chromedriver");
+            	//System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/drivers/chromedriver");
 
-		         driver = new ChromeDriver();
+		       WebDriverManager.chromedriver().setup();
+			driver = new ChromeDriver();
 
                  driver.navigate().to(Url);
             	
