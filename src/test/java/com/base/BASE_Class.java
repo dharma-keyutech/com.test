@@ -31,7 +31,9 @@ public class BASE_Class {
                    		 System.setProperty("webdriver.chrome.driver","/usr/bin/google-chrome");
 			          ChromeOptions options=new ChromeOptions();
 		                  options.addArguments("headless");
-                                  driver = new ChromeDriver();
+			          driver=new ChromeDriver(options);
+
+                                //  driver = new ChromeDriver();
 			
                  driver.navigate().to(Url);
                  
