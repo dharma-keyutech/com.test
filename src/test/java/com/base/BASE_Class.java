@@ -22,8 +22,8 @@ public class BASE_Class {
             	//System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/drivers/chromedriver");
 
 		       WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver();
-
+			 // driver = new ChromeDriver();
+                        WebDriver driver= new ChromeDriver(new ChromeDriverService.Builder().usingPort(65530).build());
   		 //WebDriverManager.firefoxdriver().setup();
 			 //driver = new FirefoxDriver();
 			
