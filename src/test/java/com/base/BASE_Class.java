@@ -22,13 +22,14 @@ public class BASE_Class {
 	// System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/drivers/chromedriver.exe");
             	//System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/drivers/chromedriver");
 
-		       WebDriverManager.chromedriver().setup();
+		      // WebDriverManager.chromedriver().setup();
 			// driver = new ChromeDriver();
                      // WebDriver driver= new ChromeDriver(new ChromeDriverService.Builder().usingPort(65530).build());
   		 //WebDriverManager.firefoxdriver().setup();
 			 //driver = new FirefoxDriver();
-		WebDriver driver= new ChromeDriver(new ChromeDriverService.Builder().usingPort(65530).build());
-
+		// WebDriver driver= new ChromeDriver(new ChromeDriverService.Builder().usingPort(65530).build());
+                   		 System.setProperty("webdriver.chrome.driver","/usr/bin/google-chrome");
+                                  driver = new ChromeDriver();
 			
                  driver.navigate().to(Url);
                  
