@@ -2,6 +2,7 @@ package com.base;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeDriverService;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -22,8 +23,8 @@ public class BASE_Class {
             	//System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/drivers/chromedriver");
 
 		       WebDriverManager.chromedriver().setup();
-			 // driver = new ChromeDriver();
-                        WebDriver driver= new ChromeDriver(new ChromeDriverService.Builder().usingPort(65530).build());
+			// driver = new ChromeDriver();
+                      WebDriver driver= new ChromeDriver(new ChromeDriverService.Builder().usingPort(65530).build());
   		 //WebDriverManager.firefoxdriver().setup();
 			 //driver = new FirefoxDriver();
 			
