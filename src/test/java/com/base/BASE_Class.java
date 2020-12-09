@@ -24,9 +24,11 @@ public class BASE_Class {
 
 		       WebDriverManager.chromedriver().setup();
 			// driver = new ChromeDriver();
-                      WebDriver driver= new ChromeDriver(new ChromeDriverService.Builder().usingPort(65530).build());
+                     // WebDriver driver= new ChromeDriver(new ChromeDriverService.Builder().usingPort(65530).build());
   		 //WebDriverManager.firefoxdriver().setup();
 			 //driver = new FirefoxDriver();
+		WebDriver driver= new ChromeDriver(new ChromeDriverService.Builder().usingPort(65530).build());
+
 			
                  driver.navigate().to(Url);
                  
