@@ -29,6 +29,8 @@ public class BASE_Class {
 			 //driver = new FirefoxDriver();
 		// WebDriver driver= new ChromeDriver(new ChromeDriverService.Builder().usingPort(65530).build());
                    		 System.setProperty("webdriver.chrome.driver","/usr/bin/google-chrome");
+			          ChromeOptions options=new ChromeOptions();
+		                  options.addArguments("headless");
                                   driver = new ChromeDriver();
 			
                  driver.navigate().to(Url);
