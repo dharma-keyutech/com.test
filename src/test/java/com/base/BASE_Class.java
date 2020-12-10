@@ -22,13 +22,13 @@ public class BASE_Class {
 	// System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/drivers/chromedriver.exe");
             	//System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/drivers/chromedriver");
 
-		// WebDriverManager.chromedriver().setup();
+		WebDriverManager.chromedriver().setup();
 			// driver = new ChromeDriver();
                      // WebDriver driver= new ChromeDriver(new ChromeDriverService.Builder().usingPort(65530).build());
   		 //WebDriverManager.firefoxdriver().setup();
 			 //driver = new FirefoxDriver();
 		// WebDriver driver= new ChromeDriver(new ChromeDriverService.Builder().usingPort(65530).build());
-                   		System.setProperty("webdriver.chrome.driver","/teja/bin/chromedriver");
+                   		// System.setProperty("webdriver.chrome.driver","/teja/bin/chromedriver");
 			          ChromeOptions options=new ChromeOptions();
 		                  options.addArguments("headless");
 			          driver=new ChromeDriver(options);
@@ -47,6 +47,12 @@ public class BASE_Class {
 		 //  System.out.println("Welcome to Jenkinns Intigration");
 			
 			System.out.println(e);
+			
+			/* logger.error("Test Fail", e); */
+			//onTestFailure();
+			driver.quit();
+			Assert.fail("");
+
 
 		}
 		}
