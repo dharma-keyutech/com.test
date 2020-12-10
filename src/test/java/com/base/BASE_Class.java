@@ -28,7 +28,7 @@ public class BASE_Class {
   		 //WebDriverManager.firefoxdriver().setup();
 			 //driver = new FirefoxDriver();
 		// WebDriver driver= new ChromeDriver(new ChromeDriverService.Builder().usingPort(65530).build());
-                   		System.setProperty("webdriver.chrome.driver","/home/teja/.local/bin:/home/teja/bin:/sbin:/bin:/usr/sbin:/usr/bin/chromedriver");
+                   		System.setProperty("webdriver.chrome.driver","//home//teja//.local//bin://home//teja//bin://sbin://bin://usr//sbin://usr//bin//chromedriver");
 			          ChromeOptions options=new ChromeOptions();
 		                  options.addArguments("headless");
 			          driver=new ChromeDriver(options);
