@@ -22,7 +22,7 @@ public class BASE_Class {
 			// location
 			
 	// System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/drivers/chromedriver.exe");
-            System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/drivers/chromedriver");
+            	System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/drivers/chromedriver");
 
 		//WebDriverManager.chromedriver().setup();
 		//WebDriverManager.chromedriver().browserVersion("87.0.4280.88");
