@@ -45,6 +45,8 @@ public class BASE_Class {
 			//System.out.println("Failed to launch Browser.");
 			
 		  System.out.println("Welcome to Jenkinns Intigration");
+			
+			System.out.println(e);
 
 		}
 		}
