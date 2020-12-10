@@ -42,9 +42,9 @@ public class BASE_Class {
                  driver.quit();
             	
                	} catch (Exception e) {
-			//System.out.println("Failed to launch Browser.");
+			System.out.println("Failed to launch Browser.");
 			
-		  System.out.println("Welcome to Jenkinns Intigration");
+		 //  System.out.println("Welcome to Jenkinns Intigration");
 			
 			System.out.println(e);
 
