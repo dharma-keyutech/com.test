@@ -24,7 +24,7 @@ public class BASE_Class {
 	// System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/drivers/chromedriver.exe");
             	//System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/drivers/chromedriver");
 
-		// WebDriverManager.chromedriver().setup();
+		WebDriverManager.chromedriver().setup();
 		WebDriverManager.chromedriver().browserVersion("87.0.4280.88");
 
 			// driver = new ChromeDriver();
