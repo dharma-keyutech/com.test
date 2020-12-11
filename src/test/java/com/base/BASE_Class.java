@@ -59,10 +59,10 @@ public class BASE_Class {
 			
 			//System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/drivers/chromedriver");
 		
-		           System.setProperty("webdriver.chrome.driver","file");
+		           System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/drivers/chromedriver");
 		            
-		       WebDriverManager.chromedriver().setup();
-	WebDriverManager.chromedriver().browserVersion("87.0.4280.88");
+		     //  WebDriverManager.chromedriver().setup();
+	// WebDriverManager.chromedriver().browserVersion("87.0.4280.88");
 		//	driver = new ChromeDriver();
 		      // ChromeOptions options=new ChromeOptions();
 		       // options.addArguments("headless");
