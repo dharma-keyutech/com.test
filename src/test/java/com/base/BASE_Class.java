@@ -22,7 +22,7 @@ public class BASE_Class {
 			// location
 			
 	// System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/drivers/chromedriver.exe");
-            	System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/drivers/chromedriver");
+            	//System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/drivers/chromedriver");
 
 		//WebDriverManager.chromedriver().setup();
 		//WebDriverManager.chromedriver().browserVersion("87.0.4280.88");
@@ -33,6 +33,40 @@ public class BASE_Class {
 			 //driver = new FirefoxDriver();
 		// WebDriver driver= new ChromeDriver(new ChromeDriverService.Builder().usingPort(65530).build());
                    		// System.setProperty("webdriver.chrome.driver","/teja/bin/chromedriver");
+			
+	         File file = new File (System.getProperty("user.dir")+"/drivers/chromedriver");
+
+		          System.out.println(file);
+
+		        // check if file exists 
+
+		        boolean exists = file.exists(); 
+
+		        if(exists == true) 
+
+		        { 
+
+		            // changing the file permissions 
+
+		            file.setExecutable(true); 
+
+		            file.setReadable(true); 
+
+		            file.setWritable(false); 
+
+		            System.out.println("File permissions changed."); 
+		  
+		            // printing the permissions associated with the file currently 
+
+		            System.out.println("Executable: " + file.canExecute()); 
+
+		            System.out.println("Readable: " + file.canRead()); 
+
+		            System.out.println("Writable: "+ file.canWrite()); 
+		      
+			//System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/drivers/chromedriver");
+		
+		           System.setProperty("webdriver.chrome.driver","file");
 			          ChromeOptions options=new ChromeOptions();
 		                  options.addArguments("headless");
 			          driver=new ChromeDriver(options);
