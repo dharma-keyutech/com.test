@@ -28,34 +28,34 @@ public class BASE_Class {
 		      //  File file = new File (System.getProperty("user.dir")+"/drivers/chromedriver");
                         //  File file = new File ();
 			WebDriverManager.chromedriver().setup();
-		          System.out.println(file);
+		         // System.out.println(file);
 
 		        // check if file exists 
 
-		        boolean exists = file.exists(); 
+		       // boolean exists = file.exists(); 
 
-		        if(exists == true) 
+		      //  if(exists == true) 
 
 		        { 
 
 		            // changing the file permissions 
 
-		            file.setExecutable(true); 
+		           // file.setExecutable(true); 
 
-		            file.setReadable(true); 
+		           // file.setReadable(true); 
 
-		            file.setWritable(false); 
+		            // file.setWritable(false); 
 
-		            System.out.println("File permissions changed."); 
+		            // System.out.println("File permissions changed."); 
 
 		  
 		            // printing the permissions associated with the file currently 
 
-		            System.out.println("Executable: " + file.canExecute()); 
+		            // System.out.println("Executable: " + file.canExecute()); 
 
-		            System.out.println("Readable: " + file.canRead()); 
+		           //  System.out.println("Readable: " + file.canRead()); 
 
-		            System.out.println("Writable: "+ file.canWrite()); 
+		            // System.out.println("Writable: "+ file.canWrite()); 
 		      
 			
 			//System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/drivers/chromedriver");
