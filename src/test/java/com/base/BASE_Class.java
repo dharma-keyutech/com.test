@@ -1,17 +1,17 @@
 package com.base;
 
+import java.io.File;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeDriverService;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import io.github.bonigarcia.wdm.WebDriverManager;
-import io.github.bonigarcia.wdm.managers.EdgeDriverManager;
-import org.testng.Assert;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BASE_Class {
 
+	private static final String tmpPath = null;
 	public static WebDriver driver;
 
 	
@@ -22,19 +22,10 @@ public class BASE_Class {
 			// location
 			
 	// System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/drivers/chromedriver.exe");
-            	//System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/drivers/chromedriver");
+            	
+			// creating a new file instance 
 
-		//WebDriverManager.chromedriver().setup();
-		//WebDriverManager.chromedriver().browserVersion("87.0.4280.88");
-
-			// driver = new ChromeDriver();
-                     // WebDriver driver= new ChromeDriver(new ChromeDriverService.Builder().usingPort(65530).build());
-  		 //WebDriverManager.firefoxdriver().setup();
-			 //driver = new FirefoxDriver();
-		// WebDriver driver= new ChromeDriver(new ChromeDriverService.Builder().usingPort(65530).build());
-                   		// System.setProperty("webdriver.chrome.driver","/teja/bin/chromedriver");
-			
-	         File file = new File (System.getProperty("user.dir")+"/drivers/chromedriver");
+		        File file = new File (System.getProperty("user.dir")+"/drivers/chromedriver");
 
 		          System.out.println(file);
 
@@ -55,6 +46,7 @@ public class BASE_Class {
 		            file.setWritable(false); 
 
 		            System.out.println("File permissions changed."); 
+
 		  
 		            // printing the permissions associated with the file currently 
 
@@ -64,39 +56,41 @@ public class BASE_Class {
 
 		            System.out.println("Writable: "+ file.canWrite()); 
 		      
+			
 			//System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/drivers/chromedriver");
 		
 		           System.setProperty("webdriver.chrome.driver","file");
-			          ChromeOptions options=new ChromeOptions();
-		                  options.addArguments("headless");
-			          driver=new ChromeDriver(options);
-
-                                //  driver = new ChromeDriver();
+		            
+		       WebDriverManager.chromedriver().setup();
+	WebDriverManager.chromedriver().browserVersion("87.0.4280.88");
+		//	driver = new ChromeDriver();
+		      // ChromeOptions options=new ChromeOptions();
+		       // options.addArguments("headless");
+		      // driver=new ChromeDriver(options);
+		       
+// WebDriver driver= new ChromeDriver(new ChromeDriverService.Builder().usingPort(65530).build());
+   
+		     //  WebDriver driver= new ChromeDriver(new ChromeDriverService.Builder().usingPort(65530).build());
+		       ChromeOptions options=new ChromeOptions();
+               options.addArguments("headless");
+	          driver=new ChromeDriver(options);
+          
+  		 //WebDriverManager.firefoxdriver().setup();
+			 //driver = new FirefoxDriver();
 			
+
                  driver.navigate().to(Url);
                  
                  Thread.sleep(300);
-                 
-                 driver.quit();
+		        }   
             	
                	} catch (Exception e) {
 			System.out.println("Failed to launch Browser.");
 			
-		 //  System.out.println("Welcome to Jenkinns Intigration");
-			
 			System.out.println(e);
-			
-			/* logger.error("Test Fail", e); */
-			//onTestFailure();
-			driver.quit();
-			Assert.fail("");
-
-
 		}
-		}
-
-
-	}
-
 	
+	}
+}
+
 
