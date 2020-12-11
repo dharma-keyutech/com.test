@@ -25,8 +25,9 @@ public class BASE_Class {
             	
 			// creating a new file instance 
 
-		        File file = new File (System.getProperty("user.dir")+"/drivers/chromedriver");
-
+		      //  File file = new File (System.getProperty("user.dir")+"/drivers/chromedriver");
+                        //  File file = new File ();
+			WebDriverManager.chromedriver().setup();
 		          System.out.println(file);
 
 		        // check if file exists 
@@ -59,7 +60,7 @@ public class BASE_Class {
 			
 			//System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/drivers/chromedriver");
 		
-		           System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/drivers/chromedriver");
+		          // System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/drivers/chromedriver");
 		            
 		     //  WebDriverManager.chromedriver().setup();
 	// WebDriverManager.chromedriver().browserVersion("87.0.4280.88");
