@@ -27,7 +27,8 @@ public class BASE_Class {
 
 		      //  File file = new File (System.getProperty("user.dir")+"/drivers/chromedriver");
                         //  File file = new File ();
-			WebDriverManager.chromedriver().setup();
+			 // WebDriverManager.chromedriver().setup();
+			
 		         // System.out.println(file);
 
 		        // check if file exists 
@@ -72,6 +73,7 @@ public class BASE_Class {
 // WebDriver driver= new ChromeDriver(new ChromeDriverService.Builder().usingPort(65530).build());
    
 		     //  WebDriver driver= new ChromeDriver(new ChromeDriverService.Builder().usingPort(65530).build());
+		   System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 		       ChromeOptions options=new ChromeOptions();
                options.addArguments("headless");
 	          driver=new ChromeDriver(options);
