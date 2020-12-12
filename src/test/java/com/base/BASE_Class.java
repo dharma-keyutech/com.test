@@ -61,7 +61,7 @@ public class BASE_Class {
 			
 			//System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/drivers/chromedriver");
 		
-		          // System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/drivers/chromedriver");
+		          System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/drivers/chromedriver");
 		            
 		     //  WebDriverManager.chromedriver().setup();
 	// WebDriverManager.chromedriver().browserVersion("87.0.4280.88");
@@ -73,7 +73,7 @@ public class BASE_Class {
 // WebDriver driver= new ChromeDriver(new ChromeDriverService.Builder().usingPort(65530).build());
    
 		     //  WebDriver driver= new ChromeDriver(new ChromeDriverService.Builder().usingPort(65530).build());
-		   System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+		  // System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 		       ChromeOptions options=new ChromeOptions();
                options.addArguments("headless");
 	          driver=new ChromeDriver(options);
