@@ -62,7 +62,7 @@ public class BASE_Class {
 			//System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/drivers/chromedriver");
 		
 		          // System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/drivers/chromedriver");
-			System.setProperty("webdriver.chrome.driver","/var/jenkins_home/workspace/Sample_Testing_Job/drivers/chromedriver");
+			System.setProperty("webdriver.chrome.driver","/var/jenkins_home/workspace/Sample_Testing_Job/drivers/chromedriver.exe");
 		            
 		     //  WebDriverManager.chromedriver().setup();
 	// WebDriverManager.chromedriver().browserVersion("87.0.4280.88");
