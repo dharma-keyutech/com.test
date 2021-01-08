@@ -25,7 +25,7 @@ public class BASE_Class {
             	
 			// creating a new file instance 
 
-		      //  File file = new File (System.getProperty("user.dir")+"/drivers/chromedriver");
+		      //  File file = new File (System.getProperty("user.dir")+"/drivers/chromedriver.exe");
                         //  File file = new File ();
 			 // WebDriverManager.chromedriver().setup();
 			
