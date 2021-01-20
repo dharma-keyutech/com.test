@@ -35,7 +35,7 @@ public class open_Browser extends BASE_Class {
 //		
 	public static WebDriver driver;
 	static String Url="https://www.google.com/";
-	static String exePATH= System.getProperty("user.dir")+"/drivers/geckodriver_MAC";
+	static String exePATH= System.getProperty("user.dir")+"/drivers/geckodriver";
 	@Test
 	public static void  test() throws Throwable    {
 		//Process pr = rt.exec("sudo chmod 777 > exePATH\"");
@@ -59,24 +59,25 @@ public class open_Browser extends BASE_Class {
 //		driver.quit();
 
 	// Chrome Head less
-//WebDriverManager.chromedriver().setup();
-//ChromeOptions options=new ChromeOptions();
-//options.addArguments("--headless");
-//driver = new ChromeDriver(options);
-//driver.get("http://www.google.com");
-//driver.manage().window().maximize();  
-//driver.quit();
-
-// Firefox headless
-
-WebDriverManager.firefoxdriver().setup();
-FirefoxOptions options2=new FirefoxOptions();
-options2.addArguments("--headless");
-driver = new FirefoxDriver(options2);
+WebDriverManager.chromedriver().setup();
+ChromeOptions options=new ChromeOptions();
+options.addArguments("--headless");
+driver = new ChromeDriver(options);
 driver.manage().timeouts().implicitlyWait(5000, TimeUnit.SECONDS);
 driver.get("http://www.google.com");
 driver.manage().window().maximize();  
-driver.quit();	
+driver.quit();
+
+// Firefox headless
+
+//WebDriverManager.firefoxdriver().setup();
+//FirefoxOptions options2=new FirefoxOptions();
+//options2.addArguments("--headless");
+//driver = new FirefoxDriver(options2);
+//driver.manage().timeouts().implicitlyWait(5000, TimeUnit.SECONDS);
+//driver.get("http://www.google.com");
+//driver.manage().window().maximize();  
+//driver.quit();	
 		
 	}
 
