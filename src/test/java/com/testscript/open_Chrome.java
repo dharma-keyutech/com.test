@@ -31,7 +31,7 @@ public class open_Chrome extends BASE_Class {
 //		
 	public static WebDriver driver;
 	static String Url="https://www.google.com/";
-	static String exePATH= System.getProperty("user.dir")+"/drivers/geckodriver";
+	static String exePATH= System.getProperty("user.dir")+"/drivers/chromedriver";
 	@Test
 	public static void  test() throws Throwable    {
 		//Process pr = rt.exec("sudo chmod 777 > exePATH\"");
