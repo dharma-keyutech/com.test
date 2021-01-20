@@ -16,10 +16,14 @@ public class open_Chrome extends BASE_Class {
 	@org.testng.annotations.Test
 	public static void  Test() {
 		
-		WebDriverManager.chromedriver().setup();
-	       ChromeOptions options=new ChromeOptions();
-               options.addArguments("headless");
-	          driver=new ChromeDriver(options);
+		  System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/drivers/chromedriver");
+		
+		// WebDriverManager.chromedriver().setup();
+	     //  ChromeOptions options=new ChromeOptions();
+              // options.addArguments("headless");
+	         // driver=new ChromeDriver(options);
+		
+		driver = new ChromeDriver();
           
 		driver.navigate().to("https://www.google.com/");
 
