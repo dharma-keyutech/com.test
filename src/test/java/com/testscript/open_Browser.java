@@ -62,7 +62,7 @@ public class open_Browser extends BASE_Class {
 WebDriverManager.chromedriver().setup();
 ChromeOptions options=new ChromeOptions();
 options.addArguments("--headless");
-options.setBinary("/usr/bin/google-chrome");
+//options.setBinary("/usr/bin/google-chrome");
 driver = new ChromeDriver(options);
 driver.get("http://www.google.com");
 driver.manage().window().maximize();  
