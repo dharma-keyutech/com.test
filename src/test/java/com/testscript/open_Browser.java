@@ -1,6 +1,7 @@
 package com.testscript;
 
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -14,7 +15,7 @@ import com.base.BASE_Class;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class open_Browser extends BASE_Class {
+public class open_Chrome extends BASE_Class {
 	
 
 //	// static String Url="https://www.google.com/";
@@ -72,6 +73,7 @@ WebDriverManager.firefoxdriver().setup();
 FirefoxOptions options2=new FirefoxOptions();
 options2.addArguments("--headless");
 driver = new FirefoxDriver(options2);
+driver.manage().timeouts().implicitlyWait(5000, TimeUnit.SECONDS);
 driver.get("http://www.google.com");
 driver.manage().window().maximize();  
 driver.quit();	
