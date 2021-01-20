@@ -16,7 +16,7 @@ public class open_Chrome extends BASE_Class {
 	@org.testng.annotations.Test
 	public static void  Test() {
 		
-		  System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/drivers/chromedriver");
+		  System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/drivers/ geckodriver");
 		
 		// WebDriverManager.chromedriver().setup();
 	     //  ChromeOptions options=new ChromeOptions();
