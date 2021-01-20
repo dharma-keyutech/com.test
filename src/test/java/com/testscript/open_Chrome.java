@@ -28,7 +28,7 @@ public class open_Chrome extends BASE_Class {
 	static String Url="https://www.google.com/";
 	static String exePATH= System.getProperty("user.dir")+"/drivers/chromedriver";
 	@Test
-	public static void  test() throws IOException {
+	public static void  test() throws Throwable {
 		Process process = Runtime.getRuntime().exec(
 		        "chmod 777 exePATH");
     System.setProperty("webdriver.chrome.driver",exePATH);
