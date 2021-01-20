@@ -26,12 +26,14 @@ public class open_Chrome extends BASE_Class {
 //		
 	public static WebDriver driver;
 	static String Url="https://www.google.com/";
+	static String exePATH= System.getProperty("user.dir")+"/drivers/chromedriver";
 	@Test
-	public static void  test() {
-    System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/drivers/chromedriver");
+	public static void  test() throws IOException {
+		Process process = Runtime.getRuntime().exec(
+		        "chmod 777 exePATH");
+    System.setProperty("webdriver.chrome.driver",exePATH);
     driver = new ChromeDriver();
 	driver.get(Url);
-
 		
 		
 	}
