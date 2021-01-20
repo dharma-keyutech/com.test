@@ -15,7 +15,7 @@ import com.base.BASE_Class;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class open_Chrome extends BASE_Class {
+public class open_Browser extends BASE_Class {
 	
 
 //	// static String Url="https://www.google.com/";
