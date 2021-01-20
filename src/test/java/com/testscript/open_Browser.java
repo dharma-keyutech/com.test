@@ -35,7 +35,7 @@ public class open_Browser extends BASE_Class {
 //		
 	public static WebDriver driver;
 	static String Url="https://www.google.com/";
-	static String exePATH= System.getProperty("user.dir")+"/drivers/geckodriver";
+	static String exePATH= System.getProperty("user.dir")+"/drivers/geckodriver_MAC";
 	@Test
 	public static void  test() throws Throwable    {
 		//Process pr = rt.exec("sudo chmod 777 > exePATH\"");
@@ -62,8 +62,8 @@ public class open_Browser extends BASE_Class {
 WebDriverManager.chromedriver().setup();
 ChromeOptions options=new ChromeOptions();
 options.addArguments("--headless");
+options.setBinary("/usr/bin/google-chrome");
 driver = new ChromeDriver(options);
-driver.manage().timeouts().implicitlyWait(5000, TimeUnit.SECONDS);
 driver.get("http://www.google.com");
 driver.manage().window().maximize();  
 driver.quit();
@@ -78,11 +78,16 @@ driver.quit();
 //driver.get("http://www.google.com");
 //driver.manage().window().maximize();  
 //driver.quit();	
+
+
+
+
 		
 	}
 
 	
 	
 	}
+
 
 
