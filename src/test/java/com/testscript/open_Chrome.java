@@ -40,14 +40,15 @@ public class open_Chrome extends BASE_Class {
 		//System.setProperty("webdriver.chrome.driver",exePATH);
 		System.setProperty("webdriver.gecko.driver",exePATH);
     //driver = new ChromeDriver();
-//		FirefoxOptions options=new FirefoxOptions();
-//		options.addArguments("--headless");
+	FirefoxOptions options=new FirefoxOptions();
+	options.addArguments("--headless");
 		
-		DesiredCapabilities capabilities=DesiredCapabilities.firefox();
-		System.out.println("Debug 2");
-		capabilities.setCapability("marionette", true);
-		System.out.println("Debug 3");
-		WebDriver driver = new FirefoxDriver(capabilities);
+//		DesiredCapabilities capabilities=DesiredCapabilities.firefox();
+//		System.out.println("Debug 2");
+//		capabilities.setCapability("marionette", true);
+//		System.out.println("Debug 3");
+//		WebDriver driver = new FirefoxDriver(capabilities);
+	WebDriver drive= new FirefoxDriver(options);
 		System.out.println("Debug 4");
 		driver.get("http://www.google.com");
 		driver.manage().window().maximize();  
@@ -60,5 +61,4 @@ public class open_Chrome extends BASE_Class {
 	
 	
 	}
-
 
