@@ -6,6 +6,8 @@ import org.openqa.selenium.chrome.ChromeDriverService;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.WebDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
 
 import com.base.BASE_Class;
 
@@ -23,8 +25,8 @@ public class open_Chrome extends BASE_Class {
 	     //  ChromeOptions options=new ChromeOptions();
               // options.addArguments("headless");
 	         // driver=new ChromeDriver(options);
-		
-		driver = new ChromeDriver();
+		      driver = new FirefoxDriver();
+		//driver = new ChromeDriver();
                 driver.get("http://www.google.com");
 
 		//driver.navigate().to("https://www.google.com/");
