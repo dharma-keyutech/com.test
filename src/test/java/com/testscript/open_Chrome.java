@@ -1,7 +1,10 @@
 package com.testscript;
 
+import java.io.IOException;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
 import com.base.BASE_Class;
@@ -26,18 +29,21 @@ public class open_Chrome extends BASE_Class {
 //		
 	public static WebDriver driver;
 	static String Url="https://www.google.com/";
-	static String exePATH= System.getProperty("user.dir")+"/drivers/chromedriver";
+	static String exePATH= System.getProperty("user.dir")+"/drivers/geckodriver_MAC";
 	@Test
-	public static void  test() throws Throwable {
-		Process process = Runtime.getRuntime().exec(
-		        "chmod 777 exePATH");
-    System.setProperty("webdriver.chrome.driver",exePATH);
-    driver = new ChromeDriver();
+	public static void  test() throws Throwable    {
+		//Process pr = rt.exec("sudo chmod 777 > exePATH\"");
+
+    System.setProperty("webdriver.gecko.driver",exePATH);
+    //driver = new ChromeDriver();
+    driver=new FirefoxDriver();
 	driver.get(Url);
+
 		
 		
 	}
 
+	
 	
 	}
 
