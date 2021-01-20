@@ -57,15 +57,24 @@ public class open_Chrome extends BASE_Class {
 //		driver.manage().window().maximize();  
 //		driver.quit();
 
-	
-WebDriverManager.chromedriver().setup();
-ChromeOptions options=new ChromeOptions();
-options.addArguments("--headless");
-driver = new ChromeDriver(options);
+	// Chrome Head less
+//WebDriverManager.chromedriver().setup();
+//ChromeOptions options=new ChromeOptions();
+//options.addArguments("--headless");
+//driver = new ChromeDriver(options);
+//driver.get("http://www.google.com");
+//driver.manage().window().maximize();  
+//driver.quit();
+
+// Firefox headless
+
+WebDriverManager.firefoxdriver().setup();
+FirefoxOptions options2=new FirefoxOptions();
+options2.addArguments("--headless");
+driver = new FirefoxDriver(options2);
 driver.get("http://www.google.com");
 driver.manage().window().maximize();  
-driver.quit();
-		
+driver.quit();	
 		
 	}
 
