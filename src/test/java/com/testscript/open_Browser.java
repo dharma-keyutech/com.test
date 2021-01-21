@@ -35,7 +35,7 @@ public class open_Browser extends BASE_Class {
 //		
 	public static WebDriver driver;
 	static String Url="https://www.google.com/";
-	static String exePATH= System.getProperty("user.dir")+"/drivers/geckodriver_MAC";
+	static String exePATH= System.getProperty("user.dir")+"/drivers/geckodriver";
 	@Test
 	public static void  test() throws Throwable    {
 		//Process pr = rt.exec("sudo chmod 777 > exePATH\"");
@@ -74,8 +74,10 @@ WebDriverManager.firefoxdriver().setup();
 FirefoxOptions options2=new FirefoxOptions();
 options2.addArguments("--headless");
 driver = new FirefoxDriver(options2);
-driver.manage().timeouts().implicitlyWait(5000, TimeUnit.SECONDS);
+driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+System.out.println("Debug 2");
 driver.get("http://www.google.com");
+System.out.println("Debug 3");	
 driver.manage().window().maximize();  
 driver.quit();	
 
