@@ -59,32 +59,32 @@ public class open_Browser extends BASE_Class {
 //		driver.quit();
 
 	// Chrome Head less
-//WebDriverManager.chromedriver().setup();
-//ChromeOptions options=new ChromeOptions();
-//options.addArguments("--headless");
-//options.setBinary("/usr/bin/google-chrome");
-//driver = new ChromeDriver(options);
-//driver.get("http://www.google.com");
-//driver.manage().window().maximize();  
-//driver.quit();
+WebDriverManager.chromedriver().setup();
+ChromeOptions options=new ChromeOptions();
+options.addArguments("--headless");
+options.setBinary("/usr/bin/google-chrome-stable /usr/share/man/man1/google-chrome-stable.1.gz");
+driver = new ChromeDriver(options);
+driver.get("http://www.google.com");
+driver.manage().window().maximize();  
+driver.quit();
 
 // Firefox headless
 //System.setProperty("webdriver.gecko.driver",exePATH);
-WebDriverManager.firefoxdriver().setup();
-FirefoxOptions options2=new FirefoxOptions();
-System.out.println("Debug 1  at setingt options for Firefox driver");
-options2.addArguments("--headless");
-System.out.println("Debug 2 at setting options for Firefox driver");	
-driver = new FirefoxDriver(options2);
-System.out.println("Debug 3 at launching Firefox using geckodriver with help of options");
-driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
-System.out.println("Debug 4 at waiting statement");
-driver.get("http://www.google.com");
-System.out.println("Debug 5 at pass URL");
-driver.manage().window().maximize();  
-System.out.println("Debug 6 at maximize browser ");
-driver.quit();	
-System.out.println("Debug 7 at Browser Quit");
+//WebDriverManager.firefoxdriver().setup();
+//FirefoxOptions options2=new FirefoxOptions();
+//System.out.println("Debug 1  at setingt options for Firefox driver");
+//options2.addArguments("--headless");
+//System.out.println("Debug 2 at setting options for Firefox driver");	
+//driver = new FirefoxDriver(options2);
+//System.out.println("Debug 3 at launching Firefox using geckodriver with help of options");
+//driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
+//System.out.println("Debug 4 at waiting statement");
+//driver.get("http://www.google.com");
+//System.out.println("Debug 5 at pass URL");
+//driver.manage().window().maximize();  
+//System.out.println("Debug 6 at maximize browser ");
+//driver.quit();	
+//System.out.println("Debug 7 at Browser Quit");
 
 
 		
