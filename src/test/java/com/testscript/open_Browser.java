@@ -69,7 +69,7 @@ public class open_Browser extends BASE_Class {
 //driver.quit();
 
 // Firefox headless
-System.setProperty("webdriver.gecko.driver",exePATH);
+//System.setProperty("webdriver.gecko.driver",exePATH);
 WebDriverManager.firefoxdriver().setup();
 FirefoxOptions options2=new FirefoxOptions();
 System.out.println("Debug 1  at settingt options for Firefox driver");
