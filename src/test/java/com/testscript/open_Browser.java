@@ -59,25 +59,25 @@ public class open_Browser extends BASE_Class {
 //		driver.quit();
 
 	// Chrome Head less
-WebDriverManager.chromedriver().setup();
-ChromeOptions options=new ChromeOptions();
-options.addArguments("--headless");
+//WebDriverManager.chromedriver().setup();
+//ChromeOptions options=new ChromeOptions();
+//options.addArguments("--headless");
 //options.setBinary("/usr/bin/google-chrome");
-driver = new ChromeDriver(options);
-driver.get("http://www.google.com");
-driver.manage().window().maximize();  
-driver.quit();
+//driver = new ChromeDriver(options);
+//driver.get("http://www.google.com");
+//driver.manage().window().maximize();  
+//driver.quit();
 
 // Firefox headless
 
-//WebDriverManager.firefoxdriver().setup();
-//FirefoxOptions options2=new FirefoxOptions();
-//options2.addArguments("--headless");
-//driver = new FirefoxDriver(options2);
-//driver.manage().timeouts().implicitlyWait(5000, TimeUnit.SECONDS);
-//driver.get("http://www.google.com");
-//driver.manage().window().maximize();  
-//driver.quit();	
+WebDriverManager.firefoxdriver().setup();
+FirefoxOptions options2=new FirefoxOptions();
+options2.addArguments("--headless");
+driver = new FirefoxDriver(options2);
+driver.manage().timeouts().implicitlyWait(5000, TimeUnit.SECONDS);
+driver.get("http://www.google.com");
+driver.manage().window().maximize();  
+driver.quit();	
 
 
 
