@@ -72,9 +72,9 @@ public class open_Browser extends BASE_Class {
 System.setProperty("webdriver.gecko.driver",exePATH);
 WebDriverManager.firefoxdriver().setup();
 FirefoxOptions options2=new FirefoxOptions();
-System.out.println("Debug 1  at setingt options for Firefox driver");
+System.out.println("Debug 1  at settingt options for Firefox driver");
 options2.addArguments("--headless");
-System.out.println("Debug 2 at setting options for Firefox driver");	
+System.out.println("Debug 2 at setting Headless as a option for Firefox driver");	
 driver = new FirefoxDriver(options2);
 System.out.println("Debug 3 at launching Firefox using geckodriver with help of options");
 //driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
