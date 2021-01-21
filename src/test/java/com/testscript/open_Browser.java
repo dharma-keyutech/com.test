@@ -79,7 +79,7 @@ driver = new FirefoxDriver(options2);
 driver = new FirefoxDriver();
 System.out.println("Debug 3 at launching Firefox using geckodriver with help of options");
 //driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
-Thread.sleep(50000); // millisec
+Thread.sleep(20000); // millisec
 System.out.println("Debug 4 at waiting statement");
 driver.get("http://www.google.com");
 System.out.println("Debug 5 at pass URL");
