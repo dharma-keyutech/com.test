@@ -42,7 +42,7 @@ public class open_Browser extends BASE_Class {
 
    // System.setProperty("webdriver.gecko.driver",exePATH);
 		//System.setProperty("webdriver.chrome.driver",exePATH);
-	//	System.setProperty("webdriver.gecko.driver",exePATH);
+		
     //driver = new ChromeDriver();
 //	FirefoxOptions options=new FirefoxOptions();
 //	options.addArguments("--headless");
@@ -69,17 +69,23 @@ public class open_Browser extends BASE_Class {
 //driver.quit();
 
 // Firefox headless
-
+//System.setProperty("webdriver.gecko.driver",exePATH);
 WebDriverManager.firefoxdriver().setup();
 FirefoxOptions options2=new FirefoxOptions();
+System.out.println("Debug 1  at when initiating Firefox");
 options2.addArguments("--headless");
+System.out.println("Debug 2 at when using Headless");	
 driver = new FirefoxDriver(options2);
-driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-System.out.println("Debug 2");
+System.out.println("Debug 3 at Creating object for firefox driver");
+driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
+System.out.println("Debug 4 at waiting statement");
 driver.get("http://www.google.com");
-System.out.println("Debug 3");	
+System.out.println("Debug 5 at pass URL");
 driver.manage().window().maximize();  
+System.out.println("Debug 6 at maximize");
 driver.quit();	
+System.out.println("Debug 7 at Browser Quit");
+
 
 
 
