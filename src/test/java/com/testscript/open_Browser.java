@@ -76,7 +76,7 @@ System.out.println("Debug 1  at settingt options for Firefox driver");
 options2.addArguments("--headless");
 System.out.println("Debug 2 at setting Headless as a option for Firefox driver");	
 driver = new FirefoxDriver(options2);
-driver = new FirefoxDriver();
+//driver = new FirefoxDriver();
 System.out.println("Debug 3 at launching Firefox using geckodriver with help of options");
 //driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 Thread.sleep(2000); // millisec
