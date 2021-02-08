@@ -20,58 +20,13 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class open_Browser extends BASE_Class {
 	
 
-//	// static String Url="https://www.google.com/";
-//	@org.testng.annotations.Test
-//	public static void  Test() {
-//
-//		launchBrowser("https://mail.google.com/mail/u/0/#inbox");
-//       // driver.navigate().to("https://mail.google.com/mail/u/0/#inbox");
-//		
-//		String Tittle= driver.getTitle();
-//		
-//		System.out.println(Tittle);
-//		
-//		
-//		String Source =driver.getPageSource();
-//		// System.out.println(Source);
-//		
 	public static WebDriver driver;
-	static String Url="https://www.google.com/";
-	static String exePATH= System.getProperty("user.dir")+"/drivers/geckodriver";
+	
 	@Test
 	public static void  test() throws Throwable    {
-		//Process pr = rt.exec("sudo chmod 777 > exePATH\"");
-
-   // System.setProperty("webdriver.gecko.driver",exePATH);
-		//System.setProperty("webdriver.chrome.driver",exePATH);
 		
-    //driver = new ChromeDriver();
-//	FirefoxOptions options=new FirefoxOptions();
-//	options.addArguments("--headless");
-		
-//		DesiredCapabilities capabilities=DesiredCapabilities.firefox();
-//		System.out.println("Debug 2");
-//		capabilities.setCapability("marionette", true);
-//		System.out.println("Debug 3");
-//		WebDriver driver = new FirefoxDriver(capabilities);
-//	WebDriver drive= new FirefoxDriver(options);
-//		System.out.println("Debug 4");
-//		driver.get("http://www.google.com");
-//		driver.manage().window().maximize();  
-//		driver.quit();
-
-	// Chrome Head less
-//WebDriverManager.chromedriver().setup();
-//ChromeOptions options=new ChromeOptions();
-//options.addArguments("--headless");
-//options.setBinary("/usr/bin/google-chrome-stable /usr/share/man/man1/google-chrome-stable.1.gz");
-//driver = new ChromeDriver(options);
-//driver.get("http://www.google.com");
-//driver.manage().window().maximize();  
-//driver.quit();
-
 // Firefox headless
-//System.setProperty("webdriver.gecko.driver",exePATH);
+
 WebDriverManager.firefoxdriver().setup();
 FirefoxOptions options2=new FirefoxOptions();
 System.out.println("Debug 1  at settingt options for Firefox driver");
@@ -90,21 +45,8 @@ driver.manage().window().maximize();
 System.out.println("Debug 6 at maximize browser ");
 driver.quit();	
 System.out.println("Debug 7 at Browser Quit");
-
-//System.setProperty("webdriver.gecko.driver", exePATH);
-//DesiredCapabilities dc = new DesiredCapabilities();
-//dc.setCapability("marionatte", false);
-//FirefoxOptions opt = new FirefoxOptions();
-//opt.merge(dc);
-//System.out.println("Debug 1  at settingt options for Firefox driver");
-//FirefoxDriver driver =  new FirefoxDriver(opt);
-//driver.get("https://stackoverflow.com");
-//System.out.println("Application opened");
-//System.out.println("Page Title is : "+driver.getTitle());
-//driver.quit();
-		
+	
 	}
 
-	
 	
 	}
