@@ -32,6 +32,7 @@ public class open_Browser {
 		// Chrome headless
 WebDriverManager.chromedriver().setup();
 ChromeOptions options2=new ChromeOptions();
+options2.setBinary("/usr/bin/google-chrome-stable");
 System.out.println("Debug 1  at settingt options for  driver");
 options2.addArguments("--headless");
 options2.addArguments("--disable-gpu");
