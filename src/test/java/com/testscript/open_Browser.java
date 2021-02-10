@@ -27,11 +27,11 @@ public class open_Browser {
 		
 // Firefox headless
 
- //WebDriverManager.firefoxdriver().setup();
-// FirefoxOptions options2=new FirefoxOptions();
+ WebDriverManager.firefoxdriver().setup();
+FirefoxOptions options2=new FirefoxOptions();
 		// Chrome headless
-WebDriverManager.chromedriver().setup();
-ChromeOptions options2=new ChromeOptions();
+// WebDriverManager.chromedriver().setup();
+// ChromeOptions options2=new ChromeOptions();
 options2.setBinary("/usr/bin/google-chrome-stable");
 System.out.println("Debug 1  at settingt options for  driver");
 options2.addArguments("--headless");
@@ -39,8 +39,8 @@ options2.addArguments("--headless");
 // options2.addArguments("--no-sandbox");
 
 System.out.println("Debug 2 at setting Headless as a option ");	
-// driver = new FirefoxDriver(options2);
-driver = new ChromeDriver(options2);
+ driver = new FirefoxDriver(options2);
+// driver = new ChromeDriver(options2);
 System.out.println("Debug 3 at launching Browser with help of options");
 //driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 Thread.sleep(50000); // millisec
