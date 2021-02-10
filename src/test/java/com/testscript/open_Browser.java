@@ -35,8 +35,8 @@ ChromeOptions options2=new ChromeOptions();
 options2.setBinary("/usr/bin/google-chrome-stable");
 System.out.println("Debug 1  at settingt options for  driver");
 options2.addArguments("--headless");
-options2.addArguments("--disable-gpu");
-options2.addArguments("--no-sandbox");
+// options2.addArguments("--disable-gpu");
+// options2.addArguments("--no-sandbox");
 
 System.out.println("Debug 2 at setting Headless as a option ");	
 // driver = new FirefoxDriver(options2);
