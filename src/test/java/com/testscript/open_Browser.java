@@ -27,8 +27,11 @@ public class open_Browser {
 		
 // Firefox headless
 
-WebDriverManager.firefoxdriver().setup();
-FirefoxOptions options2=new FirefoxOptions();
+ //WebDriverManager.firefoxdriver().setup();
+// FirefoxOptions options2=new FirefoxOptions();
+		// Chrome headless
+WebDriverManager.chromedriver().setup();
+ChromeOptions options2=new ChromeOptions();
 System.out.println("Debug 1  at settingt options for Firefox driver");
 options2.addArguments("--headless");
 //options2.addArguments("--disable-gpu");
