@@ -37,7 +37,8 @@ options2.addArguments("--headless");
 //options2.addArguments("--disable-gpu");
 //options2.addArguments("--no-sandbox");
 System.out.println("Debug 2 at setting Headless as a option ");	
-driver = new FirefoxDriver(options2);
+// driver = new FirefoxDriver(options2);
+driver = new ChromeDriver(options2);
 System.out.println("Debug 3 at launching Browser with help of options");
 //driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 Thread.sleep(50000); // millisec
