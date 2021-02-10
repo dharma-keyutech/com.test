@@ -32,7 +32,7 @@ public class open_Browser {
 		// Chrome headless
 WebDriverManager.chromedriver().setup();
 ChromeOptions options2=new ChromeOptions();
-System.out.println("Debug 1  at settingt options for Firefox driver");
+System.out.println("Debug 1  at settingt options for  driver");
 options2.addArguments("--headless");
 //options2.addArguments("--disable-gpu");
 //options2.addArguments("--no-sandbox");
