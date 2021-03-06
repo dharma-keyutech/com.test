@@ -47,6 +47,8 @@ Thread.sleep(50000); // millisec
 System.out.println("Debug 4 at waiting statement");
 driver.get("http://www.google.com");
 System.out.println("Debug 5 at pass URL");
+String s=driver.getPageSource();
+System.out.println(s);
 driver.manage().window().maximize();  
 System.out.println("Debug 6 at maximize browser ");
 driver.quit();	
