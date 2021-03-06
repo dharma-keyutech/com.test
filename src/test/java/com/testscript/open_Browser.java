@@ -49,7 +49,7 @@ driver.get("http://www.google.com");
 System.out.println("Debug 5 at pass URL");
 //String s=driver.getPageSource();
 String s=driver.getTitle();
-System.out.println(s);
+System.out.println("Launched URL is  :"+s);
 driver.manage().window().maximize();  
 System.out.println("Debug 6 at maximize browser ");
 driver.quit();	
