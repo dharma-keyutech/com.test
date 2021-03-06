@@ -52,6 +52,9 @@ String s=driver.getTitle();
 System.out.println("Launched URL is  :"+s);
 driver.manage().window().maximize();  
 System.out.println("Debug 6 at maximize browser ");
+driver.findElement(By.xpath("//*[@id=\"gb\"]/div/div[1]/div/div[1]/a")).click();
+String s1=driver.getTitle();
+System.out.println(s1);
 driver.quit();	
 System.out.println("Debug 7 at Browser Quit");
 	
